@@ -39,7 +39,7 @@ function alert() {
             <Label>Dispositivo</Label>
             <Select>
               <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Theme" />
+                <SelectValue placeholder="Seleccionar" />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="light">Light</SelectItem>
@@ -49,10 +49,10 @@ function alert() {
             </Select>
           </CardContent>
           <CardContent>
-            <Label>Alerta</Label>
+            <Label>Tipo</Label>
             <Select>
               <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Theme" />
+                <SelectValue placeholder="Seleccionar" />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="light">Light</SelectItem>
@@ -91,7 +91,7 @@ function alert() {
             <Label>Hora</Label>
             <Select>
               <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Theme" />
+                <SelectValue placeholder="Seleccionar" />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="light">Light</SelectItem>

@@ -20,6 +20,7 @@ import {
 } from "@/components/ui/table";
 import { IoEyeSharp } from "react-icons/io5";
 import { Title } from "../Title";
+import { LinkButton } from "../LinkButton";
 
 export const Devices = () => {
 
@@ -33,7 +34,10 @@ export const Devices = () => {
     <div>
       <Title value="Dispositivos"/>
       <div className="bg-slate-900 p-2 ">
-        <div className="grid grid-cols-3 ">
+        <div className="grid grid-cols-4 ">
+          <div className="mt-4 ml-2">
+            <LinkButton url="/device/add" />
+          </div>
           <div>
             <Label className="pl-2">Categoría</Label>
             <Select>
@@ -77,7 +81,7 @@ export const Devices = () => {
 
       <div className="bg-slate-900  mt-4 rounded-sm">
         <Table>
-          <TableHeader className="bg-slate-700 ">
+          <TableHeader >
             <TableRow>
               <TableHead>ID Dispositivo</TableHead>
               <TableHead>Nombre</TableHead>
@@ -100,7 +104,7 @@ export const Devices = () => {
               <TableCell>Argentina</TableCell>
               <TableCell>dd/MM/yyyy</TableCell>
               <TableCell>Activo</TableCell>
-              <TableCell><Link href="./device"><IoEyeSharp/></Link></TableCell>
+              <TableCell><Link href="./device"><IoEyeSharp className="ml-6" title="ver detalles"/></Link></TableCell>
             </TableRow>
             <TableRow>
               <TableCell>2</TableCell>
@@ -111,7 +115,7 @@ export const Devices = () => {
               <TableCell>Argentina</TableCell>
               <TableCell>dd/MM/yyyy</TableCell>
               <TableCell>Inactivo</TableCell>
-              <TableCell><Link href="./device"><IoEyeSharp/></Link></TableCell>
+              <TableCell><Link href="./device"><IoEyeSharp className="ml-6" title="ver detalles"/></Link></TableCell>
             </TableRow>
           </TableBody>
         </Table>

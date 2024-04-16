@@ -19,6 +19,8 @@ import {
 } from "@/components/ui/table";
 import { Label } from "../ui/label";
 import { Title } from "../Title";
+import { Button } from "../ui/button";
+import { LinkButton } from "../LinkButton";
 
 export const Alerts = () => {
 
@@ -27,7 +29,10 @@ export const Alerts = () => {
     <div>
       <Title value="Alertas y notificaciones" />
       <div className="bg-slate-900 p-2 ">
-        <div className="grid grid-cols-2 ">
+        <div className="grid grid-cols-3 ">
+        <div className="mt-4 ml-2">
+            <LinkButton url = "/alert/add" />
+          </div>
           <div>
             <Label className="pl-2">Dispositivo</Label>
             <Select>
@@ -54,12 +59,13 @@ export const Alerts = () => {
               </SelectContent>
             </Select>
           </div>
+          
         </div>
       </div>
 
       <div className="bg-slate-900 mt-4 ">
         <Table>
-          <TableHeader className="bg-slate-700 ">
+          <TableHeader >
             <TableRow>
               <TableHead>ID Alerta</TableHead>
               <TableHead>ID Dispositivo</TableHead>

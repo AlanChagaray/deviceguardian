@@ -69,8 +69,10 @@
 @layer base {
   * {
     @apply border-border;
+    @apply text-sm;
   }
   body {
     @apply bg-background text-foreground;
+    @apply text-sm;
   }
 }

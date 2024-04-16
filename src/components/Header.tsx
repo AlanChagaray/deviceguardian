@@ -30,13 +30,13 @@ export const Header = () => {
     <div>
       <header className="bg-slate-900 text-white">
         <div className="flex justify-between items-center p-2">
-          <div>
+          <div className="ml-5">
             <Link href="/home">DEVICE GUARDIAN</Link>
           </div>
           <Menubar className="hover:bg-slate-700" title="Alan Chagaray" >
             <MenubarMenu>
               <MenubarTrigger >
-                <IoPersonCircleOutline />
+                avatar
               </MenubarTrigger>
               <MenubarContent>
                 <MenubarItem>
